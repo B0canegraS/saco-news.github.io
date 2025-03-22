@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias y Reportes</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
+        header { background: linear-gradient(90deg, #d32f2f, #1976d2); color: white; padding: 15px; text-align: center; }
+        nav { text-align: center; padding: 10px; background: #222; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-size: 18px; transition: color 0.3s; }
+        nav a:hover { color: #d32f2f; }
+        .container { width: 90%; max-width: 1200px; margin: auto; }
+        .section { padding: 20px; background: white; margin: 20px 0; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .news-card { display: flex; background: #fff; margin: 10px 0; border-radius: 8px; overflow: hidden; box-shadow: 0 0 5px rgba(0,0,0,0.1); transition: transform 0.3s; }
+        .news-card:hover { transform: scale(1.05); }
+        .news-card img { width: 150px; height: auto; }
+        .news-content { padding: 10px; }
+        .news-content h3 { margin: 0; color: #d32f2f; }
+        .news-content p { font-size: 14px; }
+        .btn { display: inline-block; padding: 8px 12px; margin-top: 5px; background: #1976d2; color: white; text-decoration: none; border-radius: 5px; transition: background 0.3s; }
+        .btn:hover { background: #d32f2f; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background: #d32f2f; color: white; }
+        .download-btn { background: #1976d2; color: white; padding: 10px; text-decoration: none; display: inline-block; margin-top: 10px; border-radius: 5px; transition: background 0.3s; }
+        .download-btn:hover { background: #d32f2f; }
+        form input, form textarea { width: 100%; padding: 10px; margin: 5px 0; border: 1px solid #ddd; border-radius: 5px; }
+        form button { background: #d32f2f; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer; transition: background 0.3s; }
+        form button:hover { background: #1976d2; }
+        .announcement { background: #ffcc00; padding: 15px; text-align: center; font-weight: bold; border-radius: 8px; margin-bottom: 20px; animation: blink 1s infinite alternate; }
+        @keyframes blink { from { opacity: 1; } to { opacity: 0.6; } }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Noticias y Reportes</h1>
+    </header>
+    <nav>
+        <a href="#noticias">Noticias</a>
+        <a href="#reporte">Reporte Semanal</a>
+        <a href="#comunicado">Comunicado</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="container">
+        <section id="noticias" class="section">
+            <h2>Últimas Noticias</h2>
+            <div class="news-card">
+                <img src="https://via.placeholder.com/150" alt="Noticia 1">
+                <div class="news-content">
+                    <h3>Noticia Importante</h3>
+                    <p>Breve descripción de la noticia...</p>
+                    <a href="#" class="btn">Leer más</a>
+                </div>
+            </div>
+        </section>
+        <section id="reporte" class="section">
+            <h2>Estudiantes de la Semana</h2>
+            <table>
+                <tr><th>Grado</th><th>Estudiante</th></tr>
+                <tr><td>1º Asertividad</td><td>Valentina Luna</td></tr>
+                <tr><td>1º Efectividad</td><td>Aponte Pozzo, Anarella Consuelo</td></tr>
+                <tr><td>2º Superacion</td><td>Mathias Abarca</td></tr>
+                <tr><td>2º Honestidad</td><td>Sandra Malaga</td></tr>
+                <tr><td>3º Honradez</td><td>Joauqin Flores</td></tr>
+                <tr><td>3º Emprendimiento</td><td>Snaiyder Nuñez</td></tr>
+                <tr><td>3º Exito</td><td>Alexandra Rodriguez</td></tr>
+                <tr><td>4º Perseverancia</td><td>Fernanda Bravo</td></tr>
+                <tr><td>4º Resiliencia</td><td>Renato Diaz</td></tr>
+              <tr><td>5º Empatia</td><td>Santiago Requena</td></tr>
+              <tr><td>5º Responsabilidad</td><td>Alessandro Chirinos</td></tr>
+              <tr><td>5º Felicidad</td><td>Rodrigo Mendoza</td></tr>
+              <tr><td>5º Gratitud SM</td><td>Julia Hidalgo</td></tr>
+            </table>
+            <a href="#" class="download-btn">Descargar Comunicado en PDF</a>
+        </section>
+        <section id="comunicado" class="section announcement">
+            📢 Jueves hay examen simulacro. ¡Prepárate bien! 📢
+        </section>
+        <section id="contacto" class="section">
+            <h2>Contacto</h2>
+            <p>Si tienes alguna consulta, envíanos un mensaje.</p>
+            <form>
+                <input type="text" placeholder="Tu Nombre" required>
+                <input type="email" placeholder="Tu Correo" required>
+                <textarea placeholder="Tu Mensaje" rows="5" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
